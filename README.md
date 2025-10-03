@@ -206,7 +206,57 @@ SignWithStyle.filled(
 )
 ```
 
-#### 4. Custom Style
+#### 4. Elevated Style
+
+```dart
+SignWithStyle.elevated(
+  background: Colors.white,     // Background color
+  foreground: Colors.black87,   // Text and icon color
+  elevation: 6.0,               // Shadow depth
+  radius: 12,                   // Border radius
+)
+```
+
+#### 5. Pill Style
+
+```dart
+SignWithStyle.pill(
+  background: Colors.blue,      // Background color
+  foreground: Colors.white,     // Text and icon color
+)
+```
+
+#### 6. Minimal Style
+
+```dart
+SignWithStyle.minimal(
+  color: Colors.grey[600]!,     // Color for text and hover effects
+  style: StyleType.both,        // Display mode
+)
+```
+
+#### 7. Neumorphic Style
+
+```dart
+SignWithStyle.neumorphic(
+  baseColor: Colors.grey[200]!, // Base color for the effect
+  isPressed: false,             // Pressed (inset) or raised (outset)
+  radius: 20,                   // Border radius
+)
+```
+
+#### 8. Gradient Style
+
+```dart
+SignWithStyle.gradient(
+  gradient: LinearGradient(
+    colors: [Colors.blue, Colors.purple],
+  ),
+  foreground: Colors.white,     // Text and icon color
+)
+```
+
+#### 9. Custom Style
 
 ```dart
 SignWithStyle(
@@ -232,6 +282,8 @@ SignWithStyle(
 
 ## 🔧 Available Providers
 
+### Core Providers
+
 | Provider | Class                | Icon          | Default Title |
 | -------- | -------------------- | ------------- | ------------- |
 | Google   | `SignWithGoogle()`   | Google logo   | "Google"      |
@@ -239,6 +291,32 @@ SignWithStyle(
 | Facebook | `SignWithFacebook()` | Facebook logo | "Facebook"    |
 | Email    | `SignWithEmail()`    | Envelope      | "Email"       |
 | Phone    | `SignWithPhone()`    | Phone         | "Phone"       |
+
+### Social Media Providers
+
+| Provider  | Class                 | Icon           | Default Title |
+| --------- | --------------------- | -------------- | ------------- |
+| Twitter   | `SignWithTwitter()`   | Twitter logo   | "Twitter"     |
+| Instagram | `SignWithInstagram()` | Instagram logo | "Instagram"   |
+| TikTok    | `SignWithTikTok()`    | TikTok logo    | "TikTok"      |
+| Reddit    | `SignWithReddit()`    | Reddit logo    | "Reddit"      |
+
+### Professional Providers
+
+| Provider  | Class                 | Icon           | Default Title |
+| --------- | --------------------- | -------------- | ------------- |
+| LinkedIn  | `SignWithLinkedIn()`  | LinkedIn logo  | "LinkedIn"    |
+| Microsoft | `SignWithMicrosoft()` | Microsoft logo | "Microsoft"   |
+| GitHub    | `SignWithGitHub()`    | GitHub logo    | "GitHub"      |
+| Slack     | `SignWithSlack()`     | Slack logo     | "Slack"       |
+
+### Gaming & Entertainment
+
+| Provider | Class               | Icon         | Default Title |
+| -------- | ------------------- | ------------ | ------------- |
+| Discord  | `SignWithDiscord()` | Discord logo | "Discord"     |
+| Twitch   | `SignWithTwitch()`  | Twitch logo  | "Twitch"      |
+| Spotify  | `SignWithSpotify()` | Spotify logo | "Spotify"     |
 
 ## 🛠️ Creating Custom Providers
 

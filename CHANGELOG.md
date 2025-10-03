@@ -5,6 +5,63 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-10-03
+
+### 🎨 Enhanced Styling Options
+
+#### Added
+
+- **New SignWithStyle Factories**: 5 additional styling options for more design flexibility
+  - `SignWithStyle.elevated()` - Buttons with shadow and elevation effects
+  - `SignWithStyle.pill()` - Fully rounded pill-shaped buttons
+  - `SignWithStyle.minimal()` - Clean minimal design with subtle hover effects
+  - `SignWithStyle.neumorphic()` - Soft, tactile button design with inset/outset effects
+  - `SignWithStyle.gradient()` - Support for gradient backgrounds (base implementation)
+
+#### New Authentication Providers
+
+- **Social Media Providers**: 4 new social authentication options
+  - `SignWithTwitter()` - Twitter/X authentication
+  - `SignWithInstagram()` - Instagram authentication
+  - `SignWithTikTok()` - TikTok authentication
+  - `SignWithReddit()` - Reddit authentication
+- **Professional Providers**: 4 new business-focused options
+  - `SignWithLinkedIn()` - LinkedIn authentication
+  - `SignWithMicrosoft()` - Microsoft/Office 365/Azure AD authentication
+  - `SignWithGitHub()` - GitHub authentication (perfect for developer apps)
+  - `SignWithSlack()` - Slack workspace authentication
+- **Gaming & Entertainment**: 3 new entertainment platform options
+  - `SignWithDiscord()` - Discord authentication
+  - `SignWithTwitch()` - Twitch streaming platform authentication
+  - `SignWithSpotify()` - Spotify music platform authentication
+
+#### Enhanced Example App
+
+- **13 New Examples**: Comprehensive demonstrations of all new styling options
+- **Brand-Accurate Colors**: Each provider uses authentic brand colors
+- **Mixed Layouts**: Examples showing different combinations and arrangements
+- **Interactive Demos**: Real-time feedback for all new providers and styles
+
+#### Documentation Updates
+
+- **Categorized Provider Lists**: Organized providers by use case (Core, Social Media, Professional, Gaming & Entertainment)
+- **Expanded Styling Guide**: Detailed examples for all 9 styling options
+- **Enhanced API Documentation**: Comprehensive docs for all new factories and providers
+
+### 🔧 Technical Improvements
+
+- **Consistent API**: All new providers follow the same pattern as existing ones
+- **Type Safety**: Full type safety maintained across all new additions
+- **Performance**: Efficient implementation with no performance impact
+- **Backwards Compatibility**: All existing code continues to work unchanged
+
+### 📊 Package Statistics
+
+- **Total Providers**: 16 (up from 5)
+- **Total Style Options**: 9 (up from 4)
+- **Example Demonstrations**: 13 (up from 8)
+- **Supported Platforms**: All major authentication providers covered
+
 ## [1.0.0] - 2025-10-03
 
 ### 🎉 Initial Release

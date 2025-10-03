@@ -304,6 +304,127 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
               ),
             ),
 
+            // Example 9: New Elevated Style
+            _buildExampleSection(
+              title: '9. Elevated Style',
+              description: 'Buttons with shadow and elevation effects',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithGitHub(
+                    style: SignWithStyle.elevated(
+                      background: Colors.white,
+                      foreground: Colors.black87,
+                      elevation: 6.0,
+                    ),
+                  ),
+                  SignWithLinkedIn(
+                    style: SignWithStyle.elevated(
+                      background: const Color(0xFF0077B5),
+                      foreground: Colors.white,
+                      elevation: 4.0,
+                    ),
+                  ),
+                ],
+                onSign: _handleSignIn,
+              ),
+            ),
+
+            // Example 10: Pill Style
+            _buildExampleSection(
+              title: '10. Pill Style',
+              description: 'Fully rounded pill-shaped buttons',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithTwitter(
+                    style: SignWithStyle.pill(
+                      background: const Color(0xFF1DA1F2),
+                    ),
+                  ),
+                  SignWithDiscord(
+                    style: SignWithStyle.pill(
+                      background: const Color(0xFF5865F2),
+                    ),
+                  ),
+                  SignWithSpotify(
+                    style: SignWithStyle.pill(
+                      background: const Color(0xFF1DB954),
+                    ),
+                  ),
+                ],
+                countInRow: 3,
+                onSign: _handleSignIn,
+              ),
+            ),
+
+            // Example 11: Minimal Style
+            _buildExampleSection(
+              title: '11. Minimal Style',
+              description: 'Clean minimal design with subtle hover effects',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithMicrosoft(
+                    style: SignWithStyle.minimal(color: Colors.blue[700]!),
+                  ),
+                  SignWithSlack(
+                    style: SignWithStyle.minimal(color: Colors.purple[700]!),
+                  ),
+                ],
+                onSign: _handleSignIn,
+              ),
+            ),
+
+            // Example 12: Mixed Social Providers
+            _buildExampleSection(
+              title: '12. Social Media Providers',
+              description: 'Various social media authentication options',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithInstagram(
+                    style: SignWithStyle.filled(
+                      background: const Color(0xFFE1306C),
+                    ),
+                  ),
+                  SignWithTikTok(
+                    style: SignWithStyle.filled(background: Colors.black),
+                  ),
+                  SignWithTwitch(
+                    style: SignWithStyle.filled(
+                      background: const Color(0xFF9146FF),
+                    ),
+                  ),
+                  SignWithReddit(
+                    style: SignWithStyle.filled(
+                      background: const Color(0xFFFF4500),
+                    ),
+                  ),
+                ],
+                onSign: _handleSignIn,
+              ),
+            ),
+
+            // Example 13: Neumorphic Style
+            _buildExampleSection(
+              title: '13. Neumorphic Style',
+              description: 'Soft, tactile button design',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithGoogle(
+                    style: SignWithStyle.neumorphic(
+                      baseColor: Colors.grey[200],
+                      isPressed: false,
+                    ),
+                  ),
+                  SignWithApple(
+                    style: SignWithStyle.neumorphic(
+                      baseColor: Colors.grey[200],
+                      isPressed: true,
+                    ),
+                  ),
+                ],
+                onSign: _handleSignIn,
+              ),
+            ),
+
             const SizedBox(height: 32),
 
             // Footer
