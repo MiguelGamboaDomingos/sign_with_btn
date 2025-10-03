@@ -1,0 +1,68 @@
+name: sign_with_btn
+description: A beautiful Flutter package for creating customizable sign-in buttons with support for Google, Apple, Facebook, Email, and Phone authentication providers.
+version: 1.0.0
+homepage: https://github.com/mohamedmaher-dev/sign_with_btn
+repository: https://github.com/mohamedmaher-dev/sign_with_btn
+issue_tracker: https://github.com/mohamedmaher-dev/sign_with_btn/issues
+documentation: https://github.com/mohamedmaher-dev/sign_with_btn#readme
+
+topics:
+  - authentication
+  - btn
+  - buttons
+  - sign
+  - widgets
+
+maintainers:
+  - Mohamed Maher <mohamedmaher.personal@gmail.com>
+
+license: MIT
+
+environment:
+  sdk: ^3.9.2
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.10.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  # Include screenshots for documentation
+  assets:
+    - assets/screenshot-2025-10-03_21.11.21.606.png
+    - assets/screenshot-2025-10-03_21.11.31.234.png
+    - assets/screenshot-2025-10-03_21.11.34.609.png
+# For details regarding assets in packages, see
+# https://flutter.dev/to/asset-from-package
+#
+# An image asset can refer to one or more resolution-specific "variants", see
+# https://flutter.dev/to/resolution-aware-images
+
+# To add custom fonts to your package, add a fonts section here,
+# in this "flutter" section. Each entry in this list should have a
+# "family" key with the font family name, and a "fonts" key with a
+# list giving the asset and other descriptors for the font. For
+# example:
+# fonts:
+#   - family: Schyler
+#     fonts:
+#       - asset: fonts/Schyler-Regular.ttf
+#       - asset: fonts/Schyler-Italic.ttf
+#         style: italic
+#   - family: Trajan Pro
+#     fonts:
+#       - asset: fonts/TrajanPro.ttf
+#       - asset: fonts/TrajanPro_Bold.ttf
+#         weight: 700
+#
+# For details regarding fonts in packages, see
+# https://flutter.dev/to/font-from-package
