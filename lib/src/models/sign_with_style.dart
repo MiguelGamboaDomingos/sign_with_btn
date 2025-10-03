@@ -18,9 +18,9 @@ enum StyleType {
 
 /// Configuration class for customizing the appearance of sign-in buttons.
 ///
-/// [SignWithStyle] provides a flexible way to style sign-in buttons with
-/// pre-built factory constructors for common styles or complete customization
-/// through the default constructor.
+/// Provides a flexible way to style sign-in buttons with pre-built factory
+/// constructors for common styles or complete customization through the
+/// default constructor.
 ///
 /// ## Examples
 ///
@@ -41,7 +41,7 @@ enum StyleType {
 /// SignWithStyle(
 ///   styleType: StyleType.icon,
 ///   buttonStyle: ButtonStyle(
-///     backgroundColor: WidgetStatePropertyAll(Colors.grey[100]),
+///     backgroundColor: WidgetStatePropertyAll(Colors.grey),
 ///   ),
 /// )
 /// ```

@@ -1,10 +1,10 @@
-import 'package:sign_with_btn/sign_with_btn.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'sign_with_style.dart';
 
 /// Abstract base class for all sign-in provider types.
 ///
-/// [SignWithType] defines the common interface for all authentication providers
-/// supported by the sign_with_btn package. Each concrete implementation represents
-/// a specific authentication method (Google, Apple, Facebook, etc.).
+/// Defines the common interface for all authentication providers. Each
+/// concrete implementation represents a specific authentication method.
 ///
 /// ## Custom Providers
 ///
@@ -22,7 +22,7 @@ import 'package:sign_with_btn/sign_with_btn.dart';
 abstract class SignWithType {
   /// Optional custom styling for this specific provider.
   ///
-  /// When provided, this style overrides the global [SignWithBtn.style].
+  /// When provided, this style overrides the global style setting.
   /// Useful for giving individual providers unique appearances.
   final SignWithStyle? style;
 
