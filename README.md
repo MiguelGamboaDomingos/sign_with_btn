@@ -6,6 +6,26 @@
 
 A beautiful and customizable Flutter package for creating sign-in buttons with support for popular authentication providers including Google, Apple, Facebook, Email, and Phone.
 
+## 📋 Table of Contents
+
+- [✨ Features](#-features)
+- [📸 Preview](#-preview)
+- [🚀 Installation](#-installation)
+- [📱 Basic Usage](#-basic-usage)
+- [🎨 Styling Options](#-styling-options)
+- [🔧 Available Providers](#-available-providers)
+  - [Core Providers](#core-providers)
+  - [Social Media Providers](#social-media-providers)
+  - [Professional Providers](#professional-providers)
+  - [Gaming & Entertainment](#gaming--entertainment)
+- [🛠️ Creating Custom Providers](#️-creating-custom-providers)
+- [⚙️ Advanced Configuration](#️-advanced-configuration)
+- [🎯 Best Practices](#-best-practices)
+- [🏢 Brand Guidelines Compliance](#-brand-guidelines-compliance)
+- [📱 Platform Support](#-platform-support)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+
 ## ✨ Features
 
 - 🎨 **Beautiful Design**: Pre-styled buttons with modern UI
