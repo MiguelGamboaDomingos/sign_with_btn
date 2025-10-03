@@ -251,7 +251,7 @@ class SignWithStyle {
     buttonStyle: ButtonStyle(
       backgroundColor: const WidgetStatePropertyAll(Colors.transparent),
       foregroundColor: WidgetStatePropertyAll(color),
-      overlayColor: WidgetStatePropertyAll(color.withOpacity(0.1)),
+      overlayColor: WidgetStatePropertyAll(color.withValues(alpha: 0.1)),
       shape: WidgetStatePropertyAll(
         RoundedRectangleBorder(borderRadius: BorderRadius.circular(radius)),
       ),
