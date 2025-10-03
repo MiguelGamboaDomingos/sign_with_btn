@@ -336,4 +336,349 @@ class SignWithStyle {
       styleType: style,
     );
   }
+
+  // Brand-specific styling presets
+
+  /// Creates Google's official brand style.
+  ///
+  /// Follows Google's brand guidelines with the official colors and styling.
+  /// Perfect for Google Sign-In integration.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithGoogle(
+  ///   style: SignWithStyle.google(),
+  /// )
+  /// ```
+  factory SignWithStyle.google({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Colors.white),
+          foregroundColor: const WidgetStatePropertyAll(Color(0xFF1F1F1F)),
+          side: const WidgetStatePropertyAll(
+            BorderSide(color: Color(0xFFDADCE0)),
+          ),
+          elevation: const WidgetStatePropertyAll(1),
+          shadowColor: const WidgetStatePropertyAll(Colors.black12),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Apple's official brand style.
+  ///
+  /// Follows Apple's Human Interface Guidelines with the official black styling.
+  /// Perfect for Sign in with Apple integration.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithApple(
+  ///   style: SignWithStyle.apple(),
+  /// )
+  /// ```
+  factory SignWithStyle.apple({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Colors.black),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Facebook's official brand style.
+  ///
+  /// Uses Facebook's official brand color and styling guidelines.
+  /// Perfect for Facebook Login integration.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithFacebook(
+  ///   style: SignWithStyle.facebook(),
+  /// )
+  /// ```
+  factory SignWithStyle.facebook({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFF1877F2)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Twitter's official brand style.
+  ///
+  /// Uses Twitter's official brand color and modern styling.
+  /// Perfect for Twitter OAuth integration.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithTwitter(
+  ///   style: SignWithStyle.twitter(),
+  /// )
+  /// ```
+  factory SignWithStyle.twitter({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFF1DA1F2)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(9999)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates GitHub's official brand style.
+  ///
+  /// Uses GitHub's official dark styling perfect for developer applications.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithGitHub(
+  ///   style: SignWithStyle.github(),
+  /// )
+  /// ```
+  factory SignWithStyle.github({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFF24292E)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          side: const WidgetStatePropertyAll(
+            BorderSide(color: Color(0xFF1B1F23)),
+          ),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(6)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates LinkedIn's official brand style.
+  ///
+  /// Uses LinkedIn's official brand color and professional styling.
+  /// Perfect for professional and business applications.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithLinkedIn(
+  ///   style: SignWithStyle.linkedin(),
+  /// )
+  /// ```
+  factory SignWithStyle.linkedin({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFF0A66C2)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Microsoft's official brand style.
+  ///
+  /// Uses Microsoft's modern brand styling with the official blue color.
+  /// Perfect for Microsoft/Office 365/Azure AD integration.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithMicrosoft(
+  ///   style: SignWithStyle.microsoft(),
+  /// )
+  /// ```
+  factory SignWithStyle.microsoft({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFF00A4EF)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Discord's official brand style.
+  ///
+  /// Uses Discord's official brand color and modern gaming-focused styling.
+  /// Perfect for gaming and community applications.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithDiscord(
+  ///   style: SignWithStyle.discord(),
+  /// )
+  /// ```
+  factory SignWithStyle.discord({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFF5865F2)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(3)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Slack's official brand style.
+  ///
+  /// Uses Slack's official brand color and professional workspace styling.
+  /// Perfect for workplace and team collaboration applications.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithSlack(
+  ///   style: SignWithStyle.slack(),
+  /// )
+  /// ```
+  factory SignWithStyle.slack({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFF4A154B)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Spotify's official brand style.
+  ///
+  /// Uses Spotify's official green brand color and modern music app styling.
+  /// Perfect for music and entertainment applications.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithSpotify(
+  ///   style: SignWithStyle.spotify(),
+  /// )
+  /// ```
+  factory SignWithStyle.spotify({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFF1DB954)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(500)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Instagram's official brand style with gradient.
+  ///
+  /// Uses Instagram's official gradient colors and modern social media styling.
+  /// Perfect for social media and photo-sharing applications.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithInstagram(
+  ///   style: SignWithStyle.instagram(),
+  /// )
+  /// ```
+  factory SignWithStyle.instagram({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFFE4405F)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates TikTok's official brand style.
+  ///
+  /// Uses TikTok's official black styling with modern social media design.
+  /// Perfect for social media and video-sharing applications.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithTikTok(
+  ///   style: SignWithStyle.tiktok(),
+  /// )
+  /// ```
+  factory SignWithStyle.tiktok({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Colors.black),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(2)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Twitch's official brand style.
+  ///
+  /// Uses Twitch's official purple brand color and gaming-focused styling.
+  /// Perfect for gaming and streaming applications.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithTwitch(
+  ///   style: SignWithStyle.twitch(),
+  /// )
+  /// ```
+  factory SignWithStyle.twitch({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFF9146FF)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+          ),
+        ),
+        styleType: style,
+      );
+
+  /// Creates Reddit's official brand style.
+  ///
+  /// Uses Reddit's official orange brand color and community-focused styling.
+  /// Perfect for community and discussion-based applications.
+  ///
+  /// ## Example
+  ///
+  /// ```dart
+  /// SignWithReddit(
+  ///   style: SignWithStyle.reddit(),
+  /// )
+  /// ```
+  factory SignWithStyle.reddit({StyleType style = StyleType.both}) =>
+      SignWithStyle(
+        buttonStyle: ButtonStyle(
+          backgroundColor: const WidgetStatePropertyAll(Color(0xFFFF4500)),
+          foregroundColor: const WidgetStatePropertyAll(Colors.white),
+          shape: WidgetStatePropertyAll(
+            RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+          ),
+        ),
+        styleType: style,
+      );
 }

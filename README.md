@@ -256,7 +256,55 @@ SignWithStyle.gradient(
 )
 ```
 
-#### 9. Custom Style
+#### 9. Brand-Specific Styles
+
+Official brand styling that follows each platform's design guidelines:
+
+```dart
+// Google's official style
+SignWithGoogle(style: SignWithStyle.google())
+
+// Apple's official style
+SignWithApple(style: SignWithStyle.apple())
+
+// Facebook's official style
+SignWithFacebook(style: SignWithStyle.facebook())
+
+// Twitter's official style
+SignWithTwitter(style: SignWithStyle.twitter())
+
+// GitHub's official style
+SignWithGitHub(style: SignWithStyle.github())
+
+// LinkedIn's official style
+SignWithLinkedIn(style: SignWithStyle.linkedin())
+
+// Microsoft's official style
+SignWithMicrosoft(style: SignWithStyle.microsoft())
+
+// Discord's official style
+SignWithDiscord(style: SignWithStyle.discord())
+
+// Slack's official style
+SignWithSlack(style: SignWithStyle.slack())
+
+// Spotify's official style
+SignWithSpotify(style: SignWithStyle.spotify())
+
+// Instagram's official style
+SignWithInstagram(style: SignWithStyle.instagram())
+
+// TikTok's official style
+SignWithTikTok(style: SignWithStyle.tiktok())
+
+// Twitch's official style
+SignWithTwitch(style: SignWithStyle.twitch())
+
+// Reddit's official style
+SignWithReddit(style: SignWithStyle.reddit())
+```
+
+#### 10. Custom Style
 
 ```dart
 SignWithStyle(
@@ -412,11 +460,42 @@ void _handlePhoneSignIn() {
 
 ## 🎯 Best Practices
 
-1. **Consistent Styling**: Use a consistent color scheme across all providers
-2. **Provider Priority**: Place the most commonly used providers first
-3. **Responsive Design**: Test different screen sizes and orientations
-4. **Accessibility**: Ensure buttons have proper semantic labels
-5. **Error Handling**: Always handle authentication errors gracefully
+1. **Brand Compliance**: Use official brand styles for authentic appearance
+
+   ```dart
+   // ✅ Good - Uses official Google styling
+   SignWithGoogle(style: SignWithStyle.google())
+
+   // ❌ Avoid - Custom colors that don't match brand guidelines
+   SignWithGoogle(style: SignWithStyle.filled(background: Colors.purple))
+   ```
+
+2. **Consistent Styling**: Use a consistent approach across all providers
+3. **Provider Priority**: Place the most commonly used providers first
+4. **Responsive Design**: Test different screen sizes and orientations
+5. **Accessibility**: Ensure buttons have proper semantic labels
+6. **Error Handling**: Always handle authentication errors gracefully
+
+## 🏢 Brand Guidelines Compliance
+
+This package includes official brand styling for major authentication providers:
+
+- **Google**: Follows Google Sign-In branding guidelines
+- **Apple**: Complies with Apple's Human Interface Guidelines
+- **Facebook**: Uses Facebook's official brand colors and styling
+- **Twitter**: Matches Twitter's current brand identity
+- **GitHub**: Follows GitHub's design system
+- **LinkedIn**: Uses LinkedIn's professional brand styling
+- **Microsoft**: Complies with Microsoft's design language
+- **Discord**: Matches Discord's gaming-focused brand
+- **Slack**: Uses Slack's workspace-oriented styling
+- **Spotify**: Follows Spotify's music platform branding
+- **Instagram**: Uses Instagram's social media styling
+- **TikTok**: Matches TikTok's modern social platform design
+- **Twitch**: Follows Twitch's streaming platform branding
+- **Reddit**: Uses Reddit's community-focused styling
+
+All brand styles include authentic colors, border radius, and visual elements that match each platform's official design guidelines.
 
 ## 📱 Platform Support
 

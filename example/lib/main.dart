@@ -425,6 +425,93 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
               ),
             ),
 
+            // Example 14: Official Brand Styles - Core Providers
+            _buildExampleSection(
+              title: '14. Official Brand Styles - Core',
+              description:
+                  'Authentic brand styling following official guidelines',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithGoogle(style: SignWithStyle.google()),
+                  SignWithApple(style: SignWithStyle.apple()),
+                  SignWithFacebook(style: SignWithStyle.facebook()),
+                  SignWithEmail(
+                    style: SignWithStyle.minimal(color: Colors.grey[700]!),
+                  ),
+                ],
+                onSign: _handleSignIn,
+              ),
+            ),
+
+            // Example 15: Official Brand Styles - Social Media
+            _buildExampleSection(
+              title: '15. Official Brand Styles - Social Media',
+              description: 'Authentic social media brand styling',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithTwitter(style: SignWithStyle.twitter()),
+                  SignWithInstagram(style: SignWithStyle.instagram()),
+                  SignWithTikTok(style: SignWithStyle.tiktok()),
+                  SignWithReddit(style: SignWithStyle.reddit()),
+                ],
+                onSign: _handleSignIn,
+              ),
+            ),
+
+            // Example 16: Official Brand Styles - Professional
+            _buildExampleSection(
+              title: '16. Official Brand Styles - Professional',
+              description: 'Authentic professional platform styling',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithLinkedIn(style: SignWithStyle.linkedin()),
+                  SignWithMicrosoft(style: SignWithStyle.microsoft()),
+                  SignWithGitHub(style: SignWithStyle.github()),
+                  SignWithSlack(style: SignWithStyle.slack()),
+                ],
+                onSign: _handleSignIn,
+              ),
+            ),
+
+            // Example 17: Official Brand Styles - Gaming & Entertainment
+            _buildExampleSection(
+              title: '17. Official Brand Styles - Gaming & Entertainment',
+              description:
+                  'Authentic gaming and entertainment platform styling',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithDiscord(style: SignWithStyle.discord()),
+                  SignWithTwitch(style: SignWithStyle.twitch()),
+                  SignWithSpotify(style: SignWithStyle.spotify()),
+                ],
+                countInRow: 3,
+                onSign: _handleSignIn,
+              ),
+            ),
+
+            // Example 18: Mixed Brand and Custom Styles
+            _buildExampleSection(
+              title: '18. Mixed Brand and Custom Styles',
+              description:
+                  'Combining official brand styles with custom styling',
+              child: SignWithBtn(
+                signTypes: [
+                  SignWithGoogle(style: SignWithStyle.google()),
+                  SignWithApple(style: SignWithStyle.apple()),
+                  SignWithEmail(
+                    style: SignWithStyle.elevated(
+                      background: Colors.indigo,
+                      foreground: Colors.white,
+                    ),
+                  ),
+                  SignWithPhone(
+                    style: SignWithStyle.pill(background: Colors.green),
+                  ),
+                ],
+                onSign: _handleSignIn,
+              ),
+            ),
+
             const SizedBox(height: 32),
 
             // Footer
